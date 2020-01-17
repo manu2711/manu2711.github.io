@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('../fonts/Amble-Regular-webfont.eot');
+    src: url('../fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('../fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}body
+{
+	font-family: ambleregular, arial, serif;
+	background-color: rgb(33,33,33);
+	color: rgb(33,33,33);
+}
+#main_wrapper{
+	width: 1180px;
+	background-color: white;
+	border: 1px solid rgb(59,169,223);
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+#parcours{
+	margin: 100px 60px 70px 70px;
+	/*border: 1px solid black;*/
+}
+nav{
+	width: 550px;
+	background-color: rgb(152,213,235);
+}
+.infos{
+	margin: 35px 35px 35px 35px;
+	font-weight: bold;
+}
+#photo{
+	width: 300px;
+	margin: auto;
+}
+h1 {
+	font-size: 4em;
+	font-weight: normal;
+	margin-bottom: 10px;
+
+}
+h1 span{
+	color: rgb(59,169,223);
+}
+h2
+{
+	background-color: rgb(33,33,33);
+	text-align: center;
+	color: rgb(59,169,223);
+	padding: 6px;
+}
+h3{
+	margin: 0 0 100px 0;
+	font-size: 1.5em;
+	padding-bottom: 4px;
+	background: url(../images/border.png) no-repeat bottom left;
+
+}
+h4{
+	border-bottom: 2px solid rgb(59,169,223);
+	font-size: 1.6em;
+	padding: 6px 0 6px 0;
+}
+h5{
+	margin-top: 0;
+	margin-bottom: 2px;
+	font-size: 1em;
+}
+h6{
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+i{
+	color: rgb(59,169,223);
+	margin-right: 20px;
+}
+img {
+	border-radius: 50%;
+}
+p{
+	/*text-align: center;*/
+	margin: 0;
+}
+.parts{
+	/*margin: 0 60px 70px 70px;*/
+	/* background-color: grey; */
+}
+.entry{
+	margin: 0 0 20px 0;
+	display: flex;
+	flex-direction: row;
+}
+.date{
+	width: 30%;
+}
+.description{
+	flex: 1;
+}
+@media screen and (max-width: 1024px)
+{
+	
+}
