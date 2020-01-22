@@ -15,6 +15,9 @@
 	background-color: rgb(33,33,33);
 	color: rgb(33,33,33);
 }
+.bold{
+    font-weight: bold;
+}
 #main_wrapper{
 	width: 1180px;
 	background-color: white;
@@ -29,11 +32,37 @@
 }
 nav{
 	width: 550px;
+    padding: 30px 0 30px 0;
 	background-color: rgb(152,213,235);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.infos{
-	margin: 35px 35px 35px 35px;
-	font-weight: bold;
+.info:nth-child(3){
+    flex: 1;
+}
+.sub_info{
+    margin: 0 35px 0 35px;
+    text-align: justify;
+}
+.contact{
+    margin-bottom: 10px;
+}
+.icon_a{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(33,33,33);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: auto;
+}
+.icon_b{
+	color: rgb(59,169,223);
+	margin-right: 20px;
 }
 #photo{
 	width: 300px;
@@ -43,13 +72,13 @@ h1 {
 	font-size: 4em;
 	font-weight: normal;
 	margin-bottom: 10px;
+    color: black;
 
 }
 h1 span{
 	color: rgb(59,169,223);
 }
-h2
-{
+h2{
 	background-color: rgb(33,33,33);
 	text-align: center;
 	color: rgb(59,169,223);
@@ -63,6 +92,7 @@ h3{
 
 }
 h4{
+    color: black;
 	border-bottom: 2px solid rgb(59,169,223);
 	font-size: 1.6em;
 	padding: 6px 0 6px 0;
@@ -70,28 +100,19 @@ h4{
 h5{
 	margin-top: 0;
 	margin-bottom: 2px;
-	font-size: 1em;
+	font-size: 1.3em;
 }
 h6{
-	margin-top: 0;
-	margin-bottom: 4px;
-	font-size: 0.9em;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 1em;
 	font-weight: normal;
-}
-i{
-	color: rgb(59,169,223);
-	margin-right: 20px;
 }
 img {
 	border-radius: 50%;
 }
 p{
-	/*text-align: center;*/
 	margin: 0;
-}
-.parts{
-	/*margin: 0 60px 70px 70px;*/
-	/* background-color: grey; */
 }
 .entry{
 	margin: 0 0 20px 0;
@@ -100,11 +121,46 @@ p{
 }
 .date{
 	width: 30%;
+    font-weight: bold;
 }
 .description{
 	flex: 1;
 }
-@media screen and (max-width: 1024px)
+.bloc_reco{
+    display: flex;
+    flex-direction: row;
+}
+.reco{
+    width: 50%;
+    width: 50%;
+}
+@media screen and (max-width: 1180px)
 {
-	
+	#main_wrapper{
+	width: auto;
+	flex-wrap: wrap;
+    }
+    nav{
+	width: auto;
+    }
+    .entry{
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .date{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .description{
+        width: 100%;
+        flex: none;
+    }
+    .bloc_reco{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .reco{
+        width: auto;
+        margin-bottom: 12px;
+    }
 }
