@@ -3,17 +3,23 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>CV - Emmanuel Delbar</title>
+		<meta name="description" content="Développeur Web Junior, " />
+		<meta name="robot" content="index,follow"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://kit.fontawesome.com/ac567917ff.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" href=./images/icon.png>
 	</head>
 	<body>
 		<div id="main_wrapper">
+			<!-- Aside: Partie secondaire du CV incluant photo, contact, a propos et loisirs-->
 			<aside>
-                <section class="info" style="text-align: center">
-                	<img src="./images/photo200.jpg" alt="Mini Photo Emmanuel Delbar">
-                </section>
+                <div class="info text-center">
+                	<img src="./images/photo200.jpg" alt="Photo Emmanuel Delbar">
+				</div>
 				<section class="info">
-                    <h2>CONTACT</h2>
+					<header>
+						<h4>CONTACT</h4>
+					</header>
                     <div class="sub_info bold">
                         <p class="contact">
                            Adresse<br>
@@ -38,16 +44,20 @@
                     </div>
 				</section>
 				<section class="info">
-                    <h2>A PROPOS DE MOI</h2>
-                    <div class="sub_info">
-						<p>J'ai plus de quize années d'expériences dans le domaine du transport international de marchandise.</p>
-						<p>Je compte notammenent six années d'expérience dans différents pays, dans lesquels j'ai occupé divers postes.</p>
-						<p>Après cette première vie dans le monde du transport, j'ai décidé de me réorienter vers un nouveau métier: Développeur Web.</p>
-						<p>Suite à une formation dans ce domaine, je suis capable de concevoir des sites web utilisant les languages de développement web tels que HTML5 et CSS. </p>
+					<header>
+						<h4>À PROPOS DE MOI</h4>
+					</header>
+                    <div class="sub_info text-justify">
+						<p>J'ai plus de quize années d'expériences dans le domaine du transport international de marchandises.</p>
+						<p>Je compte notammenent six années d'expérience dans plusieurs pays, dans lesquels j'ai occupé différents postes.</p>
+						<p>Après cette première vie dans le monde du transport, j'ai décidé de me réorienter vers le métier de Développeur Web.</p>
+						<p>Suite à cette formation, je suis capable de concevoir des sites internet utilisant les languages de développement web tels que HTML5 et CSS. </p>
                     </div>
 				</section>
 				<section class="info">
-                    <h2>LOISIRS</h2>
+					<header>
+						<h4>LOISIRS</h4>
+					</header>
                     <div class="sub_info hobby">
                         <div class="icon_a">
                             <i class="fas fa-plane"></i>
@@ -58,154 +68,142 @@
                         <div class="icon_a">
                             <i class="fas fa-running"></i>
                         </div>
-                    </div>
+					</div>
 				</section>
 			</aside>
+			<!-- Main: Partie principale du CV incluant la formation, l'experience professionnelle et les recommandations-->
 			<main>
 				<div id="parcours">
 					<h1><span>Emmanuel</span> Delbar</h1>
-					<h3>Développeur web Junior</h3>
+					<h2>Développeur web Junior</h2>
 					<section class="parts">
-						<head>
-							<h4><i class="fas fa-graduation-cap icon_b"></i>FORMATION</h4>
-						</head>
-						<section>
-							<div class="entry">
-								<div class="date">
-									2016 - 2017<br>
-									Paris, France
-								</div>
-								<div class="description">
-									<h5>OPENCLASSROOMS</h5>
-									<h6>Développeur web</h6>
-									<p>- HTML5/CSS</p>
-								</div>
+						<header>
+							<h3><i class="fas fa-graduation-cap icon_b"></i>FORMATION</h3>
+						</header>
+						<div class="entry">
+							<div class="date_city">
+								<p>2016 - 2017</p>
+								<span>|</span>
+								<p>Paris, France</p>
 							</div>
-						</section>
-						<section>
-							<div class="entry">
-								<div class="date">
-									2006 - 2007<br>
-									La Défence, France
-								</div>
-								<div class="description">
-									<h5>SUP DE LOG</h5>
-									<h6>Conception, management et commercialisation de la chaîne de transport de marchandises</h6>
-									<p>- Transport & Logistique</p>
-								</div>
+							<div class="description">
+								<div class="title">OPENCLASSROOMS</div>
+								<div class="sub_title">Développeur web</div>
+								<p>Développement de sites internet utilisant divers programmes de programmations (HTML5, CSS, JavaScript), référencement SEO, gestion des bases de données. </p>
 							</div>
-						</section>
-						<section>
-							<div class="entry">
-								<div class="date">
-									2003 - 2005<br>
-									Meaux, France
-								</div>
-								<div class="description">
-									<h5>LYCEE SAINTE MARIE</h5>
-									<h6>BTS Commerce International</h6>
-									<p>- Marketing International</p>
-									<p>- Règles de paiement Internationaux</p>
-								</div>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>2006 - 2007</p>
+								<span>|</span>
+								<p>La Défense, France</p>
 							</div>
-							<div class="entry">
-								<div class="date">
-									1999 - 2003<br>
-									Meaux, France
-								</div>
-								<div class="description">
-									<h5>LYCEE JEAN VILAR</h5>
-									<h6>BACCALAUREAT</h6>
-									<p>- Série Scientifique</p>
-								</div>
+							<div class="description">
+								<div class="title">SUP DE LOG</div>
+								<div class="sub_title">License Professionnelle Logistique et Transport de marchandises</div>
+								<p>Conception, management et commercialisation de la chaîne de transport de marchandise.</p>
 							</div>
-						</section>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>2003 - 2005</p>
+								<span>|</span>
+								<p>Meaux, France</p>
+							</div>
+							<div class="description">
+								<div class="title">LYCEE SAINTE MARIE</div>
+								<div class="sub_title">BTS Commerce International</div>
+								<p>Marketing international, règles de paiement internationaux, organisation du transport international de marchandises, procédures douanières, etc...</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>1999 - 2003</p>
+								<span>|</span>
+								<p>Meaux, France</p>
+							</div>
+							<div class="description">
+								<div class="title">LYCEE JEAN VILAR</div>
+								<div class="sub_title">Baccalauréat</div>
+								<p>Série Scientifique, option physique & chimie.</p>
+							</div>
+						</div>
 					</section>
 					<section>
-						<head>
-							<h4><i class="fas fa-suitcase icon_b"></i>EXPERIENCE PROFESSIONNELLE</h4>
-						</head>
-						<section>
-							<div class="entry">
-								<div class="date">
-									Jan. 2019 - Déc. 2019<br>
-									Roissy, France
-								</div>
-								<div class="description">
-									<h5>DEUGRO (FRANCE) SARL</h5>
-									<h6>Key Account Manager</h6>
-									<p>
-										- Organisation du transport international de marchandises<br>
-										- Préparation et soumission des offres commerciales
-									</p>
-								</div>
+						<header>
+							<h3><i class="fas fa-suitcase icon_b"></i>EXPERIENCE PROFESSIONNELLE</h3>
+						</header>
+						<div class="entry">
+							<div class="date_city">
+								<p>Jan. 2019 - Déc. 2019</p>
+								<span>|</span>
+								<p>Roissy, France</p>
 							</div>
-							<div class="entry">
-								<div class="date">
-									Nov. 2015 - Déc. 2018<br>
-									Singapore
-								</div>
-								<div class="description">
-									<h5>DEUGRO (SINGAPORE) PTE., LTD.</h5>
-									<h6>Project Coordinator</h6>
-									<p>
-										- Organisation du transport international de marchandises<br>
-										- Préparation et soumission des offres commerciales
-									</p>
-								</div>
+							<div class="description">
+								<div class="title">DEUGRO (FRANCE) SARL</div>
+								<div class="sub_title">Key Account Manager</div>
+								<p>Préparation et soumission des offres commerciales aux clients internes et externes, ainsi que l'organisation du transport international de marchandises</p>
 							</div>
-							<div class="entry">
-								<div class="date">
-									Nov. 2013 - Nov. 2015<br>
-									London, UK
-								</div>
-								<div class="description">
-									<h5>DEUGRO (UK) LTD.</h5>
-									<h6>Project Delegate</h6>
-									<p>
-										- Organisation du transport international de marchandises<br>
-										- Préparation et soumission des offres commerciales
-									</p>
-								</div>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>Nov. 2015 - Déc. 2018</p>
+								<span>|</span>
+								<p>Singapore</p>
 							</div>
-							<div class="entry">
-								<div class="date">
-									Juin 2009 - Jan. 2013<br>
-									Roissy, France
-								</div>
-								<div class="description">
-									<h5>PANALPINA TRANSPORTS</h5>
-									<h6>Employé de transit maritime</h6>
-									<p>
-										- Opérations de transports maritime (import et export)
-									</p>
-								</div>
+							<div class="description">
+								<div class="title">DEUGRO (SINGAPORE) PTE., LTD.</div>
+								<div class="sub_title">Project Coordinator</div>
+								<p>Préparation et soumission des offres commerciales aux clients internes et externes, ainsi que l'organisation du transport international de marchandises</p>
 							</div>
-						</section>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>Nov. 2013 - Nov. 2015</p>
+								<span>|</span>
+								<p>London, England</p>
+							</div>
+							<div class="description">
+								<div class="title">DEUGRO (UK) LTD.</div>
+								<div class="sub_title">Project Delegate</div>
+								<p>Préparation et soumission des offres commerciales aux clients internes et externes, ainsi que l'organisation du transport international de marchandises</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="date_city">
+								<p>Juin 2009 - Jan. 2013</p>
+								<span>|</span>
+								<p>Roissy, France</p>
+							</div>
+							<div class="description">
+								<div class="title">PANALPINA TRANSPORTS FRANCE</div>
+								<div class="sub_title">Employé de transit maritime</div>
+								<p>Opérations de transports maritime (import et export), facturation, optimatisation des coûts d'achats.</p>
+							</div>
+						</div>
 					</section>
 					<section>
-						<head>
-							<h4><i class="fas fa-pen-fancy icon_b"></i>RECOMMANDATIONS</h4>
-						</head>
-						<section>
-							<div class="bloc_reco">
-                                <div class="reco">
-                                    <p class="bold">PASCAL MARTIN</p>
-                                    <p class="bold">Directeur, Panalpina</p>
-                                    <p class="bold">Téléphone: +33 1 0203 0405</p>
-                                    <p>Email: pascal@gmail.com</p>
-                                </div>
-                                <div class="reco">
-                                    <p class="bold">MIKE SMITH</p>
-                                    <p class="bold">Directeur, deugro</p>
-                                    <p class="bold">Téléphone: +65 0000 0000</p>
-                                    <p>Email: mike.s@gmail.com</p>
-                                </div>
-                            </div>
-						</section>
+						<header>
+							<h3><i class="fas fa-pen-fancy icon_b"></i>RECOMMANDATIONS</h3>
+						</header>
+						<div class="bloc_reco">
+							<div class="reco">
+								<p class="bold">PASCAL MARTIN</p>
+								<p class="bold">Directeur, Panalpina</p>
+								<p class="bold">Téléphone: +33 1 0203 0405</p>
+								<p>email: pascal@gmail.com</p>
+							</div>
+							<div class="reco">
+								<p class="bold">MIKE SMITH</p>
+								<p class="bold">Directeur, deugro</p>
+								<p class="bold">Téléphone: +65 0000 0000</p>
+								<p>email: mike.s@gmail.com</p>
+							</div>
+						</div>
 					</section>
 				</div>		
 			</main>
 		</div>
+		<script src="https://kit.fontawesome.com/ac567917ff.js" crossorigin="anonymous"></script>
 	</body>
 </html>

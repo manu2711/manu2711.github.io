@@ -9,11 +9,26 @@
     font-weight: normal;
     font-style: normal;
 }
+/* Classes Utilitaires*/
+.bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 /* Layout de page */
 body {
 	font-family: ambleregular, arial, serif;
 	background-color: rgb(33,33,33);
-	color: rgb(33,33,33);
+    color: rgb(33,33,33);
+    margin: auto;
+    padding: 0;
 }
 
 #main_wrapper {
@@ -27,8 +42,7 @@ body {
 
 aside{
 	width: 550px;
-    padding: 30px 0 30px 0;
-	background-color: rgb(152,213,235);
+ 	background-color: rgb(152,213,235);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,7 +50,7 @@ aside{
 
 /* Elements HTML globaux */
 h1 {
-	font-size: 4em;
+	font-size: 400%;
 	font-weight: normal;
 	margin-bottom: 10px;
     color: black;
@@ -46,74 +60,61 @@ h1 span {
 }
 
 h2 {
-	background-color: rgb(33,33,33);
-	text-align: center;
-	color: rgb(59,169,223);
-	padding: 6px;
-}
-
-h3 {
 	margin: 0 0 100px 0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding-bottom: 4px;
 	background: url(../images/border.png) no-repeat bottom left;
 }
 
-h4 {
+h3 {
     color: black;
 	border-bottom: 2px solid rgb(59,169,223);
 	font-size: 1.6em;
 	padding: 6px 0 6px 0;
 }
-h5 {
-	margin-top: 0;
-	margin-bottom: 2px;
-	font-size: 1.3em;
-}
-
-h6 {
-	margin-top: 6px;
-	margin-bottom: 6px;
-	font-size: 1em;
-	font-weight: normal;
-}
 
 img {
-	border-radius: 50%;
+    border-radius: 50%;
+    margin: 30px;
+    width: 50%;
+    max-width: 200px;
+    height: auto;
 }
 
 p{
 	margin: 0;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 /* Elements de Aside*/
-#photo {
-	width: 300px;
-	margin: auto;
+.info header {
+    height: 36px;
+    background-color: rgb(33,33,33);
+	color: rgb(59,169,223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .info:nth-child(3) {
     flex: 1;
-}
+ }
 
 .sub_info {
-    margin: 0 35px 0 35px;
-    text-align: justify;
-
+    margin: 20px 35px 20px 35px;
 }
 .sub_info p {
     margin-bottom: 6px;
 }
+.sub_info p:nth-last-child(1) {
+    margin-bottom: 0;
+}
 
-.hobby
-{
-    display: flex;
+.hobby {
+     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact {
@@ -121,21 +122,20 @@ p{
 }
 
 .icon_a {
-    width: 50px;
-    height: 50px;
+    width: 4vw;
+    height: 4vw;
     border: 2px solid rgb(33,33,33);
     border-radius: 50%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    margin: auto;
+    font-size: 3vw;
+    margin: 0 12px 0 12px;
 }
 
 /* Elements du main*/
 #parcours {
-	margin: 100px 60px 70px 70px;
+    margin: 10% 6% 7% 7%;
 }
 
 .icon_b {
@@ -149,13 +149,32 @@ p{
 	flex-direction: row;
 }
 
-.date {
+.date_city {
 	width: 30%;
     font-weight: bold;
+}
+.date_city span {
+    display: none;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .description {
 	flex: 1;
+}
+
+.title {
+	margin-top: 0;
+	margin-bottom: 2px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sub_title {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .bloc_reco {
@@ -172,6 +191,19 @@ p{
 @media screen and (max-width: 1180px) {
 	#main_wrapper {
 	    width: auto;
+    }
+
+    aside {
+	    width: 30%;
+    }
+    main {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+	#main_wrapper {
+	    width: auto;
 	    flex-wrap: wrap;
     }
 
@@ -184,10 +216,17 @@ p{
         width: auto;
     }
 
-    .date {
+    .date_city {
         width: 100%;
         margin-bottom: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
+    .date_city span {
+        display: block;
+    }
+
     .description {
         width: 100%;
         flex: none;
