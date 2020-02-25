@@ -27,7 +27,7 @@ body {
 	font-family: ambleregular, arial, serif;
 	background-color: rgb(33,33,33);
     color: rgb(33,33,33);
-    margin: auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -69,7 +69,7 @@ h2 {
 h3 {
     color: black;
 	border-bottom: 2px solid rgb(59,169,223);
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	padding: 6px 0 6px 0;
 }
 
@@ -93,7 +93,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -173,7 +173,7 @@ p{
 .sub_title {
 	margin-top: 6px;
 	margin-bottom: 6px;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: normal;
 }
 
@@ -214,6 +214,7 @@ p{
     .entry {
         flex-wrap: wrap;
         width: auto;
+        margin-bottom: 30px;
     }
 
     .date_city {
