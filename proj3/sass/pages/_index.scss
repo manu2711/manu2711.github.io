@@ -1,0 +1,74 @@
+.menu-preview {
+    margin: 36px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.image-menu {
+    width: 40%;
+    margin-bottom: 2.25rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    img {
+        width: 100%;
+        transform: scale(1);
+        transition: 400ms ease-in-out;
+        
+        &:hover {
+            transform: scale(1.3);
+            opacity: 0.3;
+        }
+    }
+    
+    @include mobile-only {
+        width: 100%;
+        max-width: 15rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 30px 8px 30px;
+    border-radius: 6px;
+    background-color: $bg-green;
+    color: $title-color;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+        height: 1.5rem;
+        margin: 0;
+    }
+}
+
+$anim-delay: 200ms;
+
+.load {
+    display: flex;
+    width: 2.5rem;
+    height: 1.5rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    &__dot{
+        font-weight: bold;
+        height: 0.5rem;
+        animation: writing 600ms ease-in-out infinite;
+        animation-direction: alternate;
+        @for $i from 1  through 3 {
+            &--#{$i} {
+                animation-delay: $anim-delay*$i;
+            }
+        }
+    }
+}
+@keyframes writing {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}

@@ -1,37 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8"/>
 		<title>P3 - Dynamisez une page web avec des animations CSS </title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://kit.fontawesome.com/ac567917ff.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" href="./image/icon.png"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="robot" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Ohmyfood ! est une entreprise de réservation de restaurant et de composition de menus en ligne. Grâce à nous, réduisez votre temps d'attente dans les restaurants car votre menu est préparé à l'avance" />
 	</head>
 	<body>
-		<header>
-			ohmyfood
-		</header>
-		<div class="main">
-			<section class="menus">
+		<div class="wrapper">
+			<header>
+				<a href="./index.html">ohmyfood</a>
+			</header>
+			<main class="menu-preview">
 				<div class="image-menu">
-					<a href="menu-1.html"><img src="./image/menu-1b.png" alt="Image Menu 1"/></a>
+					<a href="./menu/menu-1.html"><img src="./image/menu-1b.png" alt="Image Menu 1"/></a>
 				</div>
 				<div class="image-menu">
-					<a href="menu-2.html"><img src="./image/menu-2b.png" alt="Image Menu 2"/></a>
+					<a href="./menu/menu-2.html"><img src="./image/menu-2b.png" alt="Image Menu 2"/></a>
 				</div>
 				<div class="image-menu">
-					<a href="menu-3.html"><img src="./image/menu-3b.png" alt="Image Menu 3"/></a>
+					<a href="./menu/menu-3.html"><img src="./image/menu-3b.png" alt="Image Menu 3"/></a>
 				</div>
 				<div class="image-menu">
-					<a href="menu-4.html"><img src="./image/menu-4b.png" alt="Image Menu 4"/></a>
+					<a href="./menu/menu-4.html"><img src="./image/menu-4b.png" alt="Image Menu 4"/></a>
 				</div>
-			</section>
-			<div class="btn">
-				Prochainement
-			</div>
+				<div class="btn">
+					<p>Prochainement</p>
+					<div class="load">
+						<div class="load__dot load__dot--1">.</div>
+						<div class="load__dot load__dot--2">.</div>
+						<div class="load__dot load__dot--3">.</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="item">
+					<a href="./mentions.html">Mentions légales</a>
+				</div>
+				<div class="item">
+					<a href="mailto:edelbar.fr@gmail.com?subject=Ohmyfood!!!">Contactez-nous</a>
+				</div>
+			</footer>
 		</div>
-		<footer>
-			<div class="item">Mentions légales</div>
-			<div class="item">Contactez-nous</div>
-		</footer>
 	</body>
 </html>

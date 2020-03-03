@@ -1,0 +1,252 @@
+h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+
+    @include mobile-only{
+        display: none;
+    }
+}
+
+.menu {
+    min-height: 48rem;
+    margin: 0 3.75rem 1.85rem 3.75rem;
+    box-shadow: 1px 1px 10px $shadow-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        width: 4vw;
+        height: auto;
+    }
+
+    &--1 {
+        background-color: $bg-color-menu1;
+        padding: 2.5rem 3.75rem 0 3.75rem;
+        font-family: 'Kalam', cursive;
+        color: $menu-1-main-color; 
+
+        
+        h2 {
+            font-family: Devonshire;
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: $menu-1-main-color;
+            margin: 0;
+        }
+    }
+
+    &--2 {
+        background-color: $bg-color-menu2;
+        padding: 2.5rem 1.25rem 0 1.25rem;
+        font-family: 'Source Sans Pro';
+
+        h2 {
+            font-family:Junicode;
+            font-size: 2.5rem;
+            font-weight: normal;
+            background: linear-gradient(to bottom right, $txt-color-2a, $txt-color-2c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 2.5rem 0;
+        }
+    }
+
+    &--3 {
+        background-color: $bg-color-menu3;
+        padding: 2.5rem 1.25rem 0 1.25rem;
+        font-family: 'Kalam', cursive;
+
+        h2 {
+            font-family: 'Dancing Script';
+            font-size: 3.5rem;
+            font-weight: normal;
+            background: linear-gradient(to bottom right, #0228dd, #229df9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 2.5rem 0;
+        }
+    }
+
+    &--4 {
+        background-color: $bg-color-menu4;
+        padding: 2.5rem 1.25rem 0 1.25rem;
+        font-family: 'Kalam', cursive;
+
+        h2 {
+            font-family: 'Kaushan Script';
+            font-size: 3.5rem;
+            font-weight: normal;
+            background: linear-gradient(to bottom right, #3d923a, #beff7f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 2.5rem 0;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .sidebar {
+            width: 30%;
+            
+        }
+        img {
+            width: 100%;
+        }
+
+        &--1 {
+            h3 {
+                @include underline($menu-1-main-color);
+            }
+        }
+
+        &--2 {
+            margin-top: 2.5rem;
+           
+            h3 {
+                font-size: 0.9rem;
+                padding-bottom: 6px;
+            }
+
+            h3.color-2a {
+                @include underline($txt-color-2a);
+            }
+            h3.color-2b {
+                @include underline($txt-color-2b);
+            }
+            h3.color-2c {
+                @include underline($txt-color-2c);
+            }
+
+        }
+
+        &--3 {
+            margin-top: 1rem;
+
+            h3 {
+                font-size: 1.2rem;
+                font-weight: normal;
+                @include underline;
+            }
+        }
+
+        &--4 {
+            margin-top: 1rem;
+
+            h3 {
+                font-size: 1.2rem;
+                font-weight: normal;
+                @include underline;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.9rem;
+
+        &--1 {
+            width: 100%;
+        }
+
+        &--2 {
+            width: 80%;
+        }
+
+        &--3 {
+            width: 85%;
+            .price {
+                font-size: 1.2rem;
+            }
+        }
+
+        &--4 {
+            width: 85%;
+            .price {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .item {
+            margin-bottom: 0.65rem;
+        }
+        
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.25rem;
+        height: 3.75rem;
+        img {
+            width: 10%;
+            height: auto;
+            margin-right: 10px;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    @include mobile-only{
+        /* .menu */
+        margin:2rem 0.5rem  0.5rem;
+        padding: 1rem !important;
+        h2 {
+           /*display: none;*/
+           font-size: 2rem;
+           margin: 0;
+        }
+
+        img {
+            display: none;
+        }
+
+        &__header {
+            .sidebar {
+                display: none;
+            }
+        }
+        
+
+        &__items {
+            width: 100%;
+
+            .item {
+                margin-right: 0.5rem;
+            }
+        }
+
+        &__footer {
+            display: none;
+        }
+    }	
+}
+
+.color-2a {
+    color: $txt-color-2a;
+}
+
+.color-2b {
+    color: $txt-color-2b;
+}
+
+.color-2c {
+    color: $txt-color-2c;
+}
+
+

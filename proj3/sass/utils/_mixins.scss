@@ -1,0 +1,28 @@
+@mixin mobile-only {
+    @media screen and (max-width: 599px){
+        @content;
+    }
+}
+
+@mixin underline($underline_color: black) {
+    text-align: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background: $underline_color;
+        transform: scaleY(1) scaleX(0);
+        transform-origin: left;
+        transition: 500ms ease-in-out;
+    }
+    &:hover{
+        cursor: default;
+    }
+    &:hover::after {
+        transform: scaleY(1) scale(1);
+    }
+}

@@ -1,0 +1,35 @@
+footer{
+    margin-top: 12px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: $bg-green;
+    color: $title-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $page-width;
+    .item{
+        margin: 0 12px 0 12px;
+        padding: 0.5rem;
+        &:hover {
+            animation: headshake 200ms ease-in-out 2;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $title-color;
+    }
+    
+}
+
+@keyframes headshake {
+    25% {
+        transform: translateX(-4px);
+    }
+    75% {
+        transform: translateX(4px);
+    }
+}

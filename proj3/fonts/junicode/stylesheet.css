@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'junicoderegular';
+    src: url('Junicode-webfont.eot');
+    src: url('Junicode-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Junicode-webfont.woff2') format('woff2'),
+         url('Junicode-webfont.woff') format('woff'),
+         url('Junicode-webfont.ttf') format('truetype'),
+         url('Junicode-webfont.svg#junicoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
