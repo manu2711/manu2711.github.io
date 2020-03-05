@@ -50,7 +50,7 @@ aside{
 
 /* Elements HTML globaux */
 h1 {
-	font-size: 400%;
+	font-size: 3.8rem;
 	font-weight: normal;
 	margin-bottom: 10px;
     color: black;
@@ -122,14 +122,14 @@ p{
 }
 
 .icon_a {
-    width: 3vw;
-    height: 3vw;
+    width: 3rem;
+    height: 3rem;
     border: 2px solid rgb(33,33,33);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 2rem;
     margin: 0 12px 0 12px;
 }
 
@@ -143,10 +143,25 @@ p{
 	margin-right: 20px;
 }
 
+.icon_c {
+    color: rgb(59,169,223);
+    font-size: 1rem;
+}
+
+.icon_d {
+    color: rgb(59,169,223);
+}
+
 .entry {
 	margin: 0 0 20px 0;
 	display: flex;
 	flex-direction: row;
+}
+
+.bullet {
+    width: 1.5rem;
+    font-size: 0.6rem;
+    padding-top: 0.25rem;
 }
 
 .date_city {
@@ -180,10 +195,10 @@ p{
 .bloc_reco {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .reco {
-    width: 50%;
     width: 50%;
 }
 
@@ -202,6 +217,9 @@ p{
 }
 
 @media screen and (max-width: 980px) {
+    #parcours {
+        margin: auto 0.8rem;
+    }
 	#main_wrapper {
 	    width: auto;
 	    flex-wrap: wrap;
@@ -218,12 +236,14 @@ p{
     }
 
     .date_city {
-        width: 100%;
+        flex: 1;
         margin-bottom: 12px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-    }
+        flex-wrap: wrap;
+    } 
+     
     .date_city span {
         display: block;
     }
@@ -234,12 +254,14 @@ p{
     }
 
     .bloc_reco {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .reco {
-        width: auto;
+        min-width: 240px;
+        flex: 1;
         margin-bottom: 12px;
     }
 }
