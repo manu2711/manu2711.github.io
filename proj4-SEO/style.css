@@ -100,7 +100,8 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    /*color: rgba(255, 255, 255, .7);*/
+    color: rgb(255,255,255);
 }
 
 .d-bloc button:hover {
@@ -749,7 +750,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /*background-color: rgba(165, 147, 99, 0.7);*/
+    background-color: rgba(17, 1, 9, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -763,7 +765,8 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    /*background-color: #364577;*/
+    background-color: rgb(3,6,15);
 }
 
 .bgc-atomic-tangerine {
